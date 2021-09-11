@@ -1,0 +1,91 @@
+body {
+  margin: 0px;
+  height: 630px;
+}
+
+.game-main {
+  height: 630px;
+  background-image: url("./img/background.png");
+  background-size: 100% 630px;
+}
+
+.game-items {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  margin: auto;
+}
+
+.start-button {
+  width: 50px;
+  height: 50px;
+  margin: 10px auto;
+}
+
+.timer-button {
+  height: 40px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.score-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  margin: auto;
+}
+
+.game-field {
+  /* border: 5px solid black; */
+  position: absolute;
+  width: 100%;
+  height: 280px;
+  transform: translateY(60%);
+}
+.carrot,
+.bug {
+  transition: transform 300ms ease;
+  position: absolute;
+  z-index: -100;
+}
+
+.carrot:hover,
+.bug:hover {
+  transform: scale(1.2);
+}
+
+.message {
+  border-radius: 20px;
+  border: 1px solid black;
+  width: 300px;
+  height: 150px;
+  margin: auto;
+  transform: translateY(50%);
+  background-color: rgba(2, 2, 2, 0.76);
+}
+
+.hidden {
+  display: none;
+}
+
+.retry {
+  background-color: #fff;
+  position: absolute;
+  left: 40%;
+  border-radius: 10px;
+  font-size: 2em;
+  margin: 20px 0px;
+  transition: transform 300ms ease-in;
+}
+
+.retry:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.result {
+  color: #fff;
+  font-size: 2em;
+  text-align: center;
+  line-height: 130px;
+}
