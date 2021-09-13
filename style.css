@@ -42,6 +42,7 @@ body {
   height: 280px;
   transform: translateY(60%);
 }
+
 .carrot,
 .bug {
   transition: transform 300ms ease;
@@ -88,4 +89,12 @@ body {
   font-size: 2em;
   text-align: center;
   line-height: 130px;
+}
+
+@media screen and (max-width: 748px) {
+  .carrot,
+  .bug {
+    width: 50px;
+    height: 50px;
+  }
 }
